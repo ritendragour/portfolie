@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* border:  2px solid red; */
+    border:  2px solid red;
 }
 body{
     background: rgb(0,212,255);
@@ -64,11 +64,11 @@ nav a{
     margin-left: 24%;
 }
 .home-right{
-    height: 100vh;
+    height: 80vh;
     width: 50%;
     background-repeat: no-repeat;
     padding: 50px;
-    background-image: url(./img/1659937991764-removebg-preview.png);
+    background-image: url(./img/my_pic.png);
     background-position: center;
 }
 .home-img{
@@ -83,6 +83,7 @@ nav a{
     padding: 10px;
     text-align: center;
     color: black;
+    color: white;
 }
 .project{
     color: white;
@@ -107,43 +108,107 @@ img{
     flex-direction: column;
     justify-content: space-evenly;
 }
-/* .btn-section{
-    color: black;
-    display: flex;
-    justify-content: space-between;
-    height: 42x;
-    width: 50%;
-}
-.project button{
-    padding: 10px 30px;
-    border-radius: 5px;
-    padding-top: 10px;
-    font-weight: 600;
-    cursor: pointer;
-} */
 .project button:hover{
     background-color: rgb(192, 176, 176);
 }
 
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #e8efec;
+  color: rgb(12, 12, 12);
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  display: flex;
+}
+.container {
+  border-radius: 5px;
+  padding: 40px;
+}
 .res{
     display: none;
 }
 .img-section{
     display: block;
 }
+/* footer */
+.custom-container {
+    background: rgb(0,212,255);
+    background: linear-gradient(90deg, rgba(0,212,255,1) 0%, rgba(73,73,175,1) 47%, rgba(0,212,255,1) 100%);
+    /* max-width: 1100px; */
+    color: white;
+    width: 100%;
+    margin: auto;
+    border-top: 1px solid #ede5e5;
+}
+.social-icon{
+    display: flex;
+    justify-content: center;
+}
+.social-icon li {
+    list-style-type: none;
+    display: inline-flex;
+    margin: 10px;
+}
+.social-icon i {
+    border: 1px solid #fffcfc;
+    padding: 10px;
+    font-size: 20px !important;
+    border-radius: 50%;
+    color: white;
+}
+i:hover{border:1px solid #3903e9;color:#0923e9;}
+.row {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.details li {
+    padding: 0px;
+    list-style-type: none;
+    margin: 10px 0px;
+}
+ul {
+    padding: 0px;
+}
+.qualificaton li {
+    list-style-type: none;
+    margin: 10px 0px;
+}
+.footer-main{
+    border-top: 1px solid #f9f0f0;
+    margin-top: 10px;
+    padding: 10px;
+    color: white;
+    text-align: center;
+    font-size: 150%;
+}
 @media(max-width:1006px){
     .res{
         display: block;
     }
-    nav{
-        padding: 10px;
-        flex-direction: column;
-        align-items: flex-start;
+    h1{
+        margin-top: 0px;
+    }
+    .container{
+        padding: 0px;
     }
     .img-section ,.home-right{
         display: none;
     }
     .home-left{
+        padding-left: 2px;
         width: 100%;
     }
     .project{
@@ -170,15 +235,40 @@ img{
         align-items: center;
         /* justify-content: space-between; */
     }
-    /* .btn-section{
-
-        display: flex;
-        justify-content: space-between; */
-        /* margin-top: 20px; */
-        /* height: 42x; */
-        /* width: 80%;
-    } */
-
+    .row {
+        flex-direction: column;
+       align-items: center;
+       justify-content: center;
+    }
+    .contact{
+        padding: 10px;
+    }
+}
+@media(min-width:540px){
+    .project{
+        padding: 50px 10px;
+    }
+}
+@media(max-width: 990px) and (min-width: 440px){
+    nav{
+        padding: 10px;     
+        justify-content: flex-start;
+    }
+    .name{
+        padding: 0px;
+    }
+}
+@media(max-width:440px){
+  nav{
+        padding: 10px;
+        flex-direction: column;
+        align-items: center;      
+    }
+    .header-btn{
+        margin-top: 10px;
+        flex-direction: column;
+        width: auto;
+    }
 }
 
 
@@ -191,15 +281,3 @@ img{
 
 
 
-
-
-
-
-
-
-.footer{
-    background-color: black;
-    color: white;
-    text-align: center;
-    font-size: 150%;
-}
