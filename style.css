@@ -2,19 +2,24 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    border: 2px solid red;
 }
 body{
     background: rgb(0,212,255);
     background: linear-gradient(90deg, rgba(0,212,255,1) 0%, rgba(73,73,175,1) 47%, rgba(0,212,255,1) 100%);
 }
 nav{
+    position: sticky;
+    top: 0px;
+    z-index: 1;
     padding: 15px 80px;
-    /* background-color: black; */
     display: flex;
     align-items: center;
     justify-content: space-between;
-    /* box-shadow: 10px 13px 5px 0px rgba(230,209,230,1); */
     border-bottom: 1px solid #ede4e4;
+}
+.main-portfolio{
+    position: relative;
 }
 nav a{
     text-decoration: none;
@@ -42,7 +47,6 @@ nav a{
     display: flex;
     height: 90vh;
     justify-content: space-between;
-    /* background-color: black; */
 
     color: white;
     align-items: center;
@@ -74,6 +78,59 @@ nav a{
     width: 80%;
     height: 10%;
 } 
+.about{
+    padding: 20px 100px;
+    color: white;
+    border-bottom: 1px solid #f4ecec;
+}
+.about-df{
+    display: flex;
+    margin-top: 50px;
+}
+.about-img{
+    width: 50%;
+    height: 60vh;
+    background-image: url(./img/software2.jpeg);
+    background-repeat: no-repeat;  
+    padding: 20px 50px;
+}
+.about-text{
+    width: 50%;
+    padding: 0px 50px;
+}
+.about-text p{
+    font-size: 20px;
+}
+.about-text b{
+    font-size: 20px;
+    color: rgb(226, 218, 218);
+}
+.our-skills{
+    padding: 100px 100px;
+    padding-top: 10px;
+    color: white;
+    border-bottom: 1px solid #f4ecec;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 50px;
+    grid-row-gap: 0px;
+}
+.div1 { grid-area: 1 / 1 / 2 / 2; }
+.div2 { grid-area: 1 / 2 / 2 / 3; }
+.div3 { grid-area: 1 / 3 / 2 / 4; }
+.div4 { grid-area: 2 / 1 / 3 / 2; }
+.div5 { grid-area: 2 / 2 / 3 / 3; }
+.div6 { grid-area: 2 / 3 / 3 / 4; }
+.div7 { grid-area: 3 / 1 / 4 / 2; }
+.div8 { grid-area: 3 / 2 / 4 / 3; }
+.div9 { grid-area: 3 / 3 / 4 / 4; }
+.div1,.div2,.div3,.div4,.div5,.div6,.div7,.div8,.div9{
+    padding: 50px;
+}
+.our-skills h4{
+    padding-right: 20px;
+}
 .main-project{
     background: rgb(0,212,255);
     background: linear-gradient(90deg, rgba(0,212,255,1) 0%, rgba(73,73,175,1) 0%, rgba(0,212,255,1) 100%);
@@ -145,7 +202,6 @@ input[type=submit] {
 .custom-container {
     background: rgb(0,212,255);
     background: linear-gradient(90deg, rgba(0,212,255,1) 0%, rgba(73,73,175,1) 47%, rgba(0,212,255,1) 100%);
-    /* max-width: 1100px; */
     color: white;
     width: 100%;
     margin: auto;
@@ -232,7 +288,6 @@ ul {
         display: flex;
         flex-direction: column;
         align-items: center;
-        /* justify-content: space-between; */
     }
     .row {
         flex-direction: column;
@@ -259,18 +314,75 @@ ul {
 }
 @media(max-width:440px){
   nav{
-        padding: 10px;
-        flex-direction: column;
+        padding: 0px;
+        flex-wrap: wrap;
         align-items: center;      
+    }
+    /* nav a{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    } */
+    .name {
+        padding-left: 0%;
+    }
+    nav h1{
+        align-items: center;
     }
     .header-btn{
         margin-top: 10px;
-        flex-direction: column;
+        padding: 0px;
         width: auto;
+        padding: 10px;
+    }
+    .header-btn a{
+        padding: 1px 5px;
+        margin-right: 2px;
+    }
+    .project{
+        padding: 70px 10px;
     }
 }
-
-
+@media(max-width:768px){
+.about{
+    padding: 20px;
+}
+.about-df{
+    display: flex;
+    flex-direction: column;
+}
+.about-img{
+    display: none;
+}
+.about-text{
+    width: 100%;
+    padding: 10px;
+}
+.about-text p{
+    font-size: 20px;
+}
+.about-text b{
+    font-size: 20px;
+}
+.our-skills {
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(9, 1fr);
+    grid-column-gap: 5px;
+    grid-row-gap: 10px;
+    }
+    
+    .div1 { grid-area: 1 / 1 / 2 / 2; }
+    .div2 { grid-area: 2 / 1 / 3 / 2; }
+    .div3 { grid-area: 3 / 1 / 4 / 2; }
+    .div4 { grid-area: 4 / 1 / 5 / 2; }
+    .div5 { grid-area: 5 / 1 / 6 / 2; }
+    .div6 { grid-area: 6 / 1 / 7 / 2; }
+    .div7 { grid-area: 7 / 1 / 8 / 2; }
+    .div8 { grid-area: 8 / 1 / 9 / 2; }
+    .div9 { grid-area: 9 / 1 / 10 / 2; }
+}
 
 
 
