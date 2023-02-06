@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    border: 2px solid red;
 }
 body{
     background: rgb(0,212,255);
@@ -253,6 +252,9 @@ ul {
     .res{
         display: block;
     }
+    .main-logo{
+        margin-right: 10px;
+    }
     h1{
         margin-top: 0px;
     }
@@ -315,14 +317,9 @@ ul {
 @media(max-width:440px){
   nav{
         padding: 0px;
-        flex-wrap: wrap;
+        flex-direction: column;
         align-items: center;      
     }
-    /* nav a{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    } */
     .name {
         padding-left: 0%;
     }
