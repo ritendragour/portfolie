@@ -18,8 +18,8 @@ nav{
     justify-content: space-between;
     border-bottom: 1px solid #ede4e4;
     
-    /* background: rgb(0,212,255);
-    background: linear-gradient(90deg, rgba(0,212,255,1) 0%, rgba(73,73,175,1) 47%, rgba(0,212,255,1) 100%); */
+    background: rgb(0,212,255);
+    background: linear-gradient(90deg, rgba(0,212,255,1) 0%, rgba(73,73,175,1) 47%, rgba(0,212,255,1) 100%);
 }
 .main-portfolio{
     position: relative;
@@ -27,9 +27,10 @@ nav{
 nav a{
     text-decoration: none;
     color: white;
+    cursor: pointer;
 }
 .header-logo{
-    font-size: 25px;
+    font-size: 32px;
     font-weight: 550;
 }
 .header-btn{
@@ -106,6 +107,10 @@ nav a{
 .about-text b{
     font-size: 20px;
     color: rgb(226, 218, 218);
+}
+.btn-warning{
+    margin-left: 5px;
+    margin-right: 5px;
 }
 .our-skills{
     padding: 100px 100px;
@@ -338,7 +343,6 @@ ul {
         align-items: center;
     }
     .header-btn{
-        margin-top: 10px;
         padding: 0px;
         width: auto;
         padding: 10px;
@@ -352,6 +356,9 @@ ul {
     }
 }
 @media(max-width:768px){  
+    .header-logo{
+        margin-top: 8px;
+    }
     .btn-default {
         margin-top: 15px;
         margin-left: 32%;
