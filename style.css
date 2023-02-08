@@ -260,6 +260,11 @@ ul {
 .change_color{
    color: white;
 }
+.map{
+    width:100%;
+    height:500px;
+    margin-top: 10px;
+}
 @media(max-width:1006px){
     .res{
         display: block;
