@@ -361,6 +361,9 @@ ul {
     }
 }
 @media(max-width:768px){  
+    .map{
+        padding: 15px 12px;
+    }
     .header-logo{
         margin-top: 8px;
     }
