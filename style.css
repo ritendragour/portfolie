@@ -90,7 +90,7 @@ nav a:active{
     height: 10%;
 } 
 .about{
-    padding: 20px 100px;
+    padding: 100px;
     color: white;
     border-bottom: 1px solid #f4ecec;
 }
@@ -120,8 +120,12 @@ nav a:active{
     margin-left: 5px;
     margin-right: 5px;
 }
+.Skills h1{
+    padding-top: 100px;
+    padding-bottom: 10px;
+}
 .our-skills{
-    padding: 100px 100px;
+    padding: 0px 100px;
     padding-top: 10px;
     color: white;
     border-bottom: 1px solid #f4ecec;
@@ -151,7 +155,7 @@ nav a:active{
     background: linear-gradient(90deg, rgba(0,212,255,1) 0%, rgba(73,73,175,1) 0%, rgba(0,212,255,1) 100%);
 }
 .project_category{
-    padding: 10px;
+    padding-top: 100px;
     text-align: center;
     color: black;
     color: white;
