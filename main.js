@@ -11,9 +11,6 @@
         skills.style.display = 'none';
         project.style.display = 'none';
         contact.style.display = 'none';
-
-        // padding in home page
-        // document.querySelector('#home').style.paddingTop ='110px';
     }
     function aboutShow(){
         about.style.display = 'block';
