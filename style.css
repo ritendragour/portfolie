@@ -23,10 +23,19 @@ nav{
 .main-portfolio{
     position: relative;
 }
+.main-logo:hover{
+    color: #e96309;
+}
 nav a{
     text-decoration: none;
     color: white;
     cursor: pointer;
+}
+nav a:hover{
+    color: #f7f4f2;
+}
+nav a:active{
+    color: #09e93a;
 }
 .header-logo{
     font-size: 32px;
@@ -34,7 +43,7 @@ nav a{
 }
 .header-btn{
     padding: 0px 40px 0px 0px;
-    width: 30%;
+    width: 40%;
     font-size: 19px;
     display: flex;
     justify-content: space-between;
@@ -265,6 +274,9 @@ ul {
     height:500px;
     margin-top: 10px;
 }
+.ures{
+    display: block;
+}
 @media(max-width:1006px){
     .res{
         display: block;
@@ -328,14 +340,15 @@ ul {
 }
 @media(max-width: 990px) and (min-width: 440px){
     nav{
-        padding: 10px;     
+        padding: 8px;     
         justify-content: flex-start;
     }
     .name{
         padding: 0px;
     }
 }
-@media(max-width:440px){
+/* 440px before */
+@media(max-width:476px){ 
   nav{
         padding: 0px;
         flex-direction: column;
@@ -361,6 +374,9 @@ ul {
     }
 }
 @media(max-width:768px){  
+    .ures{
+        display: none;
+    }
     .map{
         padding: 15px 12px;
     }

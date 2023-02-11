@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./img/my_pic.png" type="image/x-icon">
     <!-- <meta name="description" content="Ritendra gour">
     <meta name="keywords" content="Ritendra gour">
     <meta name="author" content="Ritendra gour"> -->
@@ -19,18 +20,19 @@
 </head>
 <body>
     <nav>
-        <div class="header-logo" >
-            <a href="#" class="main-logo">Ritendra</a>
+        <div class="header-logo">
+            <a href="#home" class="main-logo" onclick="homeShow()">Ritendra</a>
         </div>
         <div class="header-btn">
-            <a href="#about">About</a>
-            <a href="#Skills">Skills</a>
-            <a href="#main-project">Project</a>
-            <a href="#contact">Contact</a>
+            <a href="#home" onclick="homeShow()" class="ures">Home</a>
+            <a href="#about" onclick="aboutShow()">About</a>
+            <a href="#Skills" onclick="skillsShow()">Skills</a>
+            <a href="#main-project" onclick="projectShow()">Project</a>
+            <a href="#main-contact" onclick="contactShow()">Contact</a>
         </div>
     </nav>
     <div class="main-portfolio">
-    <div class="home">
+    <div class="home" id="home">
         <div class="home-left">
             <h1>Hey ,</h1>
             <div class="name">
@@ -43,7 +45,7 @@
         <div class="home-right">
         </div>
     </div>
-    <div class="about" id="about">
+    <div class="about" id="about" style="display: none;">
         <h1 class="text-center"><u>About</u></h1>
         <div class="about-df">          
         <div class="about-img"></div>
@@ -60,7 +62,7 @@
     </div>
     </div>
 </div>
-    <div class="Skills" id="Skills">
+    <div class="Skills" id="Skills" style="display: none;">
         <h1 class="text-center" style="color: white;"><u>Our Skills</u></h1>
         <div class="our-skills">
         <div class="div1"> 
@@ -110,7 +112,7 @@
    </div>
 </div>
     </div>
-    <div id="main-project">  
+    <div id="main-project" style="display: none;">  
           <h1 class="project_category"><u>Website Clone</u></h1>
 
         <!-- microsoft login page -->
@@ -317,7 +319,8 @@
         </div>
     </div>
     </div>
-    <div class="contact" id="contact" style="border-top: 1px solid white;">
+    <div id="main-contact"  style="display: none;">
+    <div class="contact"style="border-top: 1px solid white;">
         <div class="container">
             <form action="">
                 <h1 class="text-center" style="padding-bottom: 10px;color: white;"><u>Contact Us</u></h1>
@@ -346,6 +349,7 @@
           <!-- map -->
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1787.500837211125!2d75.88366098429658!3d22.73726444321162!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3962fd44d1beb083%3A0xf997696d678db324!2sAtal%20Dwar%2C%20HIG%20Main%20Rd%2C%20Near%20MIG%20Thana%2C%20Nehru%20Nagar%2C%20Indore%2C%20Madhya%20Pradesh%20452003!5e0!3m2!1sen!2sin!4v1675956606003!5m2!1sen!2sin" class="map" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
+</div>
     <footer>
         <div class="custom-container">
             <div class="row">
@@ -389,8 +393,9 @@
 </div>
   <div class="footer-main">
         <span><i class="fa fa-copyright"></i> 2023 Powered by Ritendra Gour <a
-                href="https://in.linkedin.com/in/ritendra-gour-b33739228?trk=people_directo" target="_blank">
-                </a></span>
-                </div>
+                href="https://in.linkedin.com/in/ritendra-gour-b33739228?trk=people_directo" target="_blank"></a>
+            </span>
+   </div>
+   <script src="./main.js"></script>
 </body>
 </html>
