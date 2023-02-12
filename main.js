@@ -41,7 +41,10 @@
     }
      
     // SMTP API
-
+    let fName = document.getElementById('fName');
+    let cEmail = document.getElementById('cEmail');
+    let cPhone = document.getElementById('cPhone');
+    let cMessage = document.getElementById('cMessage');
 
     // in html <button onclick="sendEmail">send me </button>
     function sendEmail() {
@@ -51,9 +54,12 @@
           Username: "de3mo9@gmail.com",
           Password: "mxatymjbioueuhko",
           To: 'de3mo9@gmail.com',
-          From: "de3mo9@gmail.com",
+          From: "de3mo9@gmail.com", 
           Subject: "Sending Email using javascript",
-          Body: "Well that was easy!!",
+          Body: 'Name - '+ fName + '\n' +
+                'Email - '+ contactEmail + '\n' +
+                'Phone - '+ cPhone + '\n' +
+                'Message - '+ cMessage + '\n',
         })
           .then(function (message) {
             alert("mail sent successfully")

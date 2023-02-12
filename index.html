@@ -328,43 +328,42 @@
      <div id="main-contact" style="display: none;">
     <div class="contact"style="border-top: 1px solid white;padding-top:50px">
         <h1 class="text-center" style="color: white;"><u>Contact Us</u></h1>
-       <!-- Wrapper container -->
+      
             <div class="container py-4">
 
-                <!-- Bootstrap 5 starter form -->
                 <form id="contactForm">
             
                 <!-- Name input -->
                 <div class="mb-3">
-                    <label class="form-label" for="name">Name</label>
-                    <input class="form-control" id="name" type="text" placeholder="Full Name" style="padding: 20px;" required/>
+                    <label class="form-label" for="cName">Full Name</label>
+                    <input class="form-control" id="cName" type="text" placeholder="Full Name" style="padding: 20px;" required/>
                 </div>
             
                 <!-- Email address input -->
                 <div class="mb-3">
-                    <label class="form-label" for="emailAddress">Email Address</label>
-                    <input class="form-control" id="emailAddress" type="email" placeholder="Email Address" required/>
+                    <label class="form-label" for="cEmail">Email Address</label>
+                    <input class="form-control" id="cEmail" type="email" placeholder="Email Address" required/>
                 </div>
                     
                  <!-- Email address input -->
                  <div class="mb-3 py-200px">
-                    <label class="form-label" for="emailAddress">Phone number</label>
-                    <input class="form-control" id="emailAddress" type="tel" placeholder="Phone number" required/>
+                    <label class="form-label" for="cPhone">Phone number</label>
+                    <input class="form-control" id="cPhone" type="tel" placeholder="Phone number" required/>
                 </div>
             
                 <!-- Message input -->
                 <div class="mb-3">
-                    <label class="form-label" for="message">Message</label>
-                    <textarea class="form-control" id="message" type="text" placeholder="Message" style="height: 10rem;" required></textarea>
+                    <label class="form-label" for="cMessage">Message</label>
+                    <textarea class="form-control" id="cMessage" type="text" placeholder="Message" style="height: 10rem;" required></textarea>
                 </div>
 
-                <!-- google recaptcha -->
+                <!-- Google recaptcha -->
                 <div class="d-grid">
                 <span class="g-recaptcha" data-sitekey="6Ld3j3UkAAAAAEWkGbNpt0PAHiv_7R8DXQuQt7Kf"></span>
                  </div>
                 <!-- Form submit button -->
                 <div class="d-grid">
-                    <button class="btn btn-light btn-lg" style="margin-top:10px ;" type="submit">Send Message</button>
+                    <button class="btn btn-light btn-lg" style="margin-top:10px ;" type="submit" onclick="sendEmail()">Send Message</button>
                 </div>
             
                 </form>
