@@ -46,7 +46,6 @@
     let cPhone = document.getElementById('cPhone');
     let cMessage = document.getElementById('cMessage');
 
-    // in html <button onclick="sendEmail">send me </button>
     function sendEmail() {
         Email.send({
           Host: "smtp.gmail.com",
