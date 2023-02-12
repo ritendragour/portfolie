@@ -22,16 +22,21 @@
 <body>
     <nav>
         <div class="header-logo">
-            <a href="#" class="main-logo">Ritendra</a>
+            <a href="#" class="main-logo" onclick="homeShow()">Ritendra</a>
         </div>
         <div class="header-btn">
-            <a href="#" class="ures">Home</a>
+            <a href="#" class="ures"  onclick="homeShow()">Home</a>
             <a href="#about" onclick="aboutShow()">About</a>
             <a href="#Skills" onclick="skillsShow()">Skills</a>
             <a href="#main-project" onclick="projectShow()">Project</a>
             <a href="#main-contact" onclick="contactShow()">Contact</a>
         </div>
     </nav>
+
+    <div class="call">
+        
+        <a href="tel:9826964395"><i class="fa fa-phone"></i></a>
+    </div>
     <div class="main-portfolio">
     <div class="home" id="home">
         <div class="home-left">
@@ -357,10 +362,9 @@
               <div class="details">
                   <h3>PERSONAL INFO</h3>
                   <ul>
-                      <li>NAME : Ritendra Gour</li>
-                      <li> ADDRESS : Atal Dwar ,Indore</li>
+                      <li style="font-size: 18px">NAME : Ritendra Gour</li>
                       <li>CONTACT US : <a href="tel:9826964395" class="change_color">9826964395</a></li>
-                      <li>EMAIL : ritendragour5@gmail.com</li>
+                      <li>EMAIL :  <a href="mailto:ritendragour5@gmail.com" class="change_color">ritendragour5@gmail.com</a></li>
                   </ul>
               </div>
               <div class="qualificaton">
@@ -373,17 +377,16 @@
               </div>
               <div class="about-us">
                   <div class="text">
-                      <h3>ABOUT US</h3>
-                      <p> Full Stack Web Developer. <br>I have done many major <br>projects as full stack developer.<br>
-                        I am a detail-oriented and creative <br>software developer . 
-                      </p>          
+                      <h3>ADDRESS</h3>
+                      <p>Nehru nagar, near by Atal dwar <br> Indore, Pincode : 452001(M.P.)</p>
+                      <p>Birthplace - seoni malwa<br> Dist - Narmadapuram (M.P.)</p>          
                   </div>
               </div>
               
               <div class="qualificaton">
                 <h3>EXPLORE MENU &nbsp;&nbsp;</h3>
                   <ul>
-                    <li><a href="#" class="change_color">Home</a></li>
+                    <li><a href="#" class="change_color"  onclick="homeShow()">Home</a></li>
                     <li><a href="#about" onclick="aboutShow()" class="change_color">About</a></li>
                     <li><a href="#Skills" onclick="skillsShow()" class="change_color">Skills</a></li>
                     <li><a href="#main-project" onclick="projectShow()" class="change_color">Project</a></li>
@@ -394,11 +397,12 @@
         </div>
         <div class="social-icon">
             <ul>
+                <li><a href="tel:9826964395"><i class="fa fa-phone"></i></a></li>
+                <li><a href="emailto:ritendragour5@gmail.com"><i class="fa fa-envelope"></i></a></li>
+                <li><a href="https://www.linkedin.com/feed/"><i class="fa fa-linkedin"></i></a></li>
                 <li><a href="https://www.facebook.com/ritendra.gour.77/"><i class="fa fa-facebook-f"></i></a></li>
                 <li><a href="https://www.instagram.com/ritendra_gour/"><i class="fa fa-instagram"></i></a></li>
                 <li><a href="https://mobile.twitter.com/ritendragour1"><i class="fa fa-twitter"></i></a></li>
-                <li><a href="emailto:ritendragour5@gmail.com"><i class="fa fa-envelope"></i></a></li>
-                <li><a href="https://www.linkedin.com/feed/"><i class="fa fa-linkedin"></i></a></li>
             </ul>
         </div>
   </footer>
