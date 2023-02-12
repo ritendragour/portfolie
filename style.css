@@ -24,7 +24,6 @@ nav{
     position: fixed;
     left: 50px;
     bottom: 20px;
-    size: 200px;
     z-index: 1;
 }
 .call a{
@@ -406,9 +405,6 @@ ul {
     }
 }
 @media(max-width:768px){  
-    .call{
-     display: none;
-    }
     .ures{
         display: none;
     }
