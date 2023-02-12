@@ -234,8 +234,11 @@ input[type=submit] {
 .img-section{
     display: block;
 }
+.mb-3{
+    padding: 10px;
+}
 .form-label{
-    padding-top: 20px;
+    padding-left: 5px;
 }
 .form-control{
     padding: 20px;
