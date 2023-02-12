@@ -40,12 +40,18 @@ function contactShow() {
     project.style.display = 'none';
 }
 
-// SMTP API
+
+
+// Required google recaptcha logic
+document.getElementById("googleRecaptcha").addEventListener("submit", function (evt) {
+
+    // SMTP API
 let fName = document.getElementById('fName');
 let cEmail = document.getElementById('cEmail');
 let cPhone = document.getElementById('cPhone');
 let cMessage = document.getElementById('cMessage');
 
+    // send function start
 function sendEmail() {
     Email.send({
         Host: "smtp.gmail.com",
@@ -64,9 +70,7 @@ function sendEmail() {
             alert("mail sent successfully")
         });
 }
-
-// Required google recaptcha logic
-document.getElementById("googleRecaptcha").addEventListener("submit", function (evt) {
+    // send function End
 
     var response = grecaptcha.getResponse();
     if (response.length == 0) {
