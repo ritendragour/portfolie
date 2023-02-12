@@ -234,6 +234,12 @@ input[type=submit] {
 .img-section{
     display: block;
 }
+.form-label{
+    padding-top: 20px;
+}
+.form-control{
+    padding: 20px;
+}
 /* footer */
 .custom-container {
     background: rgb(0,212,255);
