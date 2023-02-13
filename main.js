@@ -55,10 +55,10 @@ function sendEmail() {
         To: 'de3mo9@gmail.com',
         From: "de3mo9@gmail.com",
         Subject: "Sending Email using javascript",
-        Body: 'Name - ' + fName + '\n' +
-            'Email - ' + usermail + '\n' +
-            'Phone - ' + cPhone + '\n' +
-            'Message - ' + cMessage + '\n',
+        Body: 'Name - ' + fName.value + '\n' +
+            'Email - ' + usermail.value + '\n' +
+            'Phone - ' + cPhone.value + '\n' +
+            'Message - ' + cMessage.value + '\n',
     })
         .then(function (message) {
             alert("mail sent successfully")
