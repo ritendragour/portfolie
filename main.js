@@ -42,7 +42,7 @@ function contactShow() {
 
 // SMTP API
 let fName = document.getElementById('fName');
-let cEmail = document.getElementById('cEmail');
+let usermail = document.getElementById('cEmail');
 let cPhone = document.getElementById('cPhone');
 let cMessage = document.getElementById('cMessage');
 
@@ -56,7 +56,7 @@ function sendEmail() {
         From: "de3mo9@gmail.com",
         Subject: "Sending Email using javascript",
         Body: 'Name - ' + fName + '\n' +
-            'Email - ' + contactEmail + '\n' +
+            'Email - ' + usermail + '\n' +
             'Phone - ' + cPhone + '\n' +
             'Message - ' + cMessage + '\n',
     })
