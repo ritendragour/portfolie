@@ -48,19 +48,17 @@ let cMessage = document.getElementById('cMessage');
 
 function sendEmail() {
     Email.send({
-        Host: "smtp.gmail.com",
-        //   Port: 587,
+        Host: "smtp.mailtrap.io",
         Username: "de3mo9@gmail.com",
-        Password: "mxatymjbioueuhko",
+        Password: "Lxhry84x6N?U5WC",
         To: 'de3mo9@gmail.com',
         From: "de3mo9@gmail.com",
-        Subject: "Sending Email using javascript",
+        Subject: "Test email",
         Body: 'Name - ' + fName.value + '\n' +
             'Email - ' + usermail.value + '\n' +
             'Phone - ' + cPhone.value + '\n' +
             'Message - ' + cMessage.value + '\n',
-    })
-        .then(function (message) {
-            alert("mail sent successfully")
-        });
+    }).then(
+        message => alert(message)
+    );
 }
