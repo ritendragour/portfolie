@@ -1,559 +1,84 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="./img/my_pic.png" type="image/x-icon" />
-    <meta name="description" content="Ritendra gour">
-    <meta name="keywords" content="Ritendra gour">
-    <meta name="author" content="Ritendra gour"> 
+  <script src="https://kit.fontawesome.com/37e53b104d.js" crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Ritendra gour</title>
+  <style>
+    .bg {
+      background-image: url('https://images.unsplash.com/photo-1496065187959-7f07b8353c55?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80');
+      font-family: Arial, Helvetica, sans-serif;
+      height: 100vh;
+      color: white;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <link rel="stylesheet" href="style.css" />
-        
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <title>Ritendra gour</title>
+    .note {
+      width: 80vw;
+      border: 5px solid white;
+      border-radius: 10px;
+      padding: 10px 20px;
+      /*color: black;*/
+      background: rgb(0 0 0 / 40%);
+    }
+
+    .note a {
+        color: #06dcf2;
+      text-decoration: none;
+    }
+
+    .w-40 {
+      width: 47%;
+    }
+
+    .df {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .dfc {
+      display: flex;
+      justify-content: center;
+    }
+
+    .other {
+      margin: 40px 0px;
+    }
+    
+  </style>
 </head>
 
-<body>
-    <nav>
-        <div class="header-logo">
-            <a href="#" class="main-logo" onclick="homeShow()">Ritendra</a>
-        </div>
-        <div class="header-btn">
-            <a href="#" class="ures" onclick="homeShow()">Home</a>
-            <a href="#about" onclick="aboutShow()">About</a>
-            <a href="#Skills" onclick="skillsShow()">Skills</a>
-            <a href="#main-project" onclick="projectShow()">Project</a>
-            <a href="#main-contact" onclick="contactShow()">Contact</a>
-        </div>
-        
-                 <span>   
-                 <a href="mailto:info@ritendra.tech"
-                                    class="change_color ures"><h5>info@ritendra.tech</h5></a>
-                 <a href="mailto:support@ritendra.tech"
-                                    class="change_color ures"><h5>support@ritendra.tech</h5></a>
-                </span>                    
-    </nav>
-
-    <!-- testing SMTP Start -->
-    <!-- <input type="button" value="Send Email" onclick="sendEmail()"> -->
-    <!-- testing SMTP End -->
-
-    <div class="call">
-        <a href="https://github.com/ritendragour" target="_blank"><i class="fa fa-github"></i></a>
-    </div>
-    <div class="main-portfolio">
-        <div class="home" id="home">
-            <div class="home-left">
-                <h1>Hey ,</h1>
-                <div class="name">
-                    <h1>I'm Ritendra Gour</h1>
-                    <h2>Software Developer</h2>
-                </div>
-                <img src="./img/my_pic.png" alt="Ritendra's Image" class="res" />
-                <a href="#contact" class="btn btn-default" onclick="contactShow()">Contact me</a>
-            </div>
-            <div class="home-right"></div>
-        </div>
-        <div class="about" id="about" style="display: none">
-            <h1 class="text-center"><u>About</u></h1>
-            <div class="about-df">
-                <div class="about-img" data-aos="fade-up-right"></div>
-                <div class="about-text">
-                    <p>I am Ritendra gour</p>
-                    <p>
-                        a Full Stack Web Developer. I have done many major projects as
-                        full stack developer.
-                    </p>
-                    <p>I am a detail-oriented and creative software developer .</p>
-                    <p>I am so passionate and dedicated to my work.</p>
-                    <p>
-                        I am working in different Language like Reactjs, JavaScript, HTML,
-                        CSS, PHP, MySQL, WordPress, jquery and Java .
-                    </p>
-                    <p>I have Master’s degree from the Devi Ahilya Vishwavidyalay</p>
-                    <p><b> Work Place:</b> Click Spurr LTD Soctland (U.K.)</p>
-                    <p><b> Education:</b> Devi Ahilya Vishwavidyalaya</p>
-                    <p><b>Hometown:</b> Indore</p>
-                </div>
-            </div>
-        </div>
-        <div class="Skills" id="Skills" style="display: none">
-            <h1 class="text-center" style="color: white"><u>Our Skills</u></h1>
-            <div class="our-skills">
-                <div class="div1">
-                    <span><img src="./img/html.png" alt="" /></span>
-                    <input type="range" value="83" disabled />
-                    <h4 class="text-right">83%</h4>
-                </div>
-                <div class="div2">
-                    <img src="./img/css.png" alt="" />
-                    <input type="range" value="72" disabled />
-                    <h4 class="text-right">72%</h4>
-                </div>
-                <div class="div3">
-                    <img src="./img/js.png" alt="" />
-                    <input type="range" value="77" disabled />
-                    <h4 class="text-right">77%</h4>
-                </div>
-                <div class="div4">
-                    <img src="./img/reactjs.png" alt="" />
-                    <input type="range" value="66" disabled />
-                    <h4 class="text-right">66%</h4>
-                </div>
-                <div class="div5">
-                    <img src="./img/php.png" alt="" />
-                    <input type="range" value="74" disabled />
-                    <h4 class="text-right">74%</h4>
-                </div>
-                <div class="div6">
-                    <img src="./img/wp.png" alt="" />
-                    <input type="range" value="93" disabled />
-                    <h4 class="text-right">93%</h4>
-                </div>
-                <div class="div7">
-                    <img src="./img/mysql.png" alt="" />
-                    <input type="range" value="80" disabled />
-                    <h4 class="text-right">80%</h4>
-                </div>
-                <div class="div8">
-                    <img src="./img/java.png" alt="" />
-                    <input type="range" value="40" disabled />
-                    <h4 class="text-right">40%</h4>
-                </div>
-                <div class="div9">
-                    <img src="./img/jquery.png" alt="" />
-                    <input type="range" value="92" disabled />
-                    <h4 class="text-right">92%</h4>
-                </div>
-            </div>
-        </div>
-        <div id="main-project" style="display: none">
-            <h1 class="project_category"><u>Website Clone</u></h1>
-
-            <!-- microsoft login page -->
-            <div class="project">
-                <div class="img-section">
-                    <a href="https://ritendragour.github.io/microsoft-login-page/" target="_blank"><img
-                            src="./img/mlogin.png" alt="" class="ures" /></a>
-                </div>
-                <div class="text">
-                    <h1>Microsoft login page</h1>
-                    <a href="https://ritendragour.github.io/microsoft-login-page/" target="_blank"><img
-                            src="./img/mlogin.png" alt="" class="res" /></a>
-                    <p style="font-size: 17px">
-                        Using HTML , CSS .
-                        <br />
-                        Microsoft login page clone
-                    </p>
-                    <div class="btn-section">
-                        <a href="https://ritendragour.github.io/microsoft-login-page/" class="btn btn-success"
-                            target="_blank">Go Live</a>
-                        <a href="https://github.com/ritendragour/microsoft-login-page.git" class="btn btn-warning"
-                            target="_blank">Show Code</a>
-                        <a href="https://github.com/ritendragour/microsoft-login-page/archive/refs/heads/main.zip"
-                            class="btn btn-info">Download</a>
-                    </div>
-                </div>
-            </div>
-            <!-- microsoft website -->
-            <div class="project">
-                <div class="img-section">
-                    <a href="https://ritendragour.github.io/microsoft-website/" target="_blank"><img
-                            src="./img/mwebsite.png" alt="" class="ures" /></a>
-                </div>
-                <div class="text">
-                    <h1>Microsoft website</h1>
-                    <a href="https://ritendragour.github.io/microsoft-website/" target="_blank"><img
-                            src="./img/mwebsite.png" alt="" class="res" /></a>
-                    <p style="font-size: 17px">
-                        Using HTML , CSS .
-                        <br />
-                        Microsoft website clone
-                    </p>
-                    <div class="btn-section">
-                        <a href="https://ritendragour.github.io/microsoft-website/" class="btn btn-success"
-                            target="_blank">Go Live</a>
-                        <a href="https://github.com/ritendragour/microsoft-website.git" class="btn btn-warning"
-                            target="_blank">Show Code</a>
-                        <a href="https://github.com/ritendragour/microsoft-website/archive/refs/heads/main.zip"
-                            class="btn btn-info">Download</a>
-                    </div>
-                </div>
-            </div>
-            <!-- Engadget_login_page -->
-            <div class="project">
-                <div class="img-section">
-                    <a href="https://ritendragour.github.io/Engadget_login_page/" target="_blank"><img
-                            src="./img/elogin.png" alt="" class="ures" /></a>
-                </div>
-                <div class="text">
-                    <h1>Engadget login page</h1>
-                    <a href="https://ritendragour.github.io/Engadget_login_page/" target="_blank"><img
-                            src="./img/elogin.png" alt="" class="res" /></a>
-                    <p style="font-size: 17px">
-                        Using HTML , CSS .
-                        <br />
-                        Engadget login page clone
-                    </p>
-                    <div class="btn-section">
-                        <a href="https://ritendragour.github.io/Engadget_login_page/" class="btn btn-success"
-                            target="_blank">Go Live</a>
-                        <a href="https://github.com/ritendragour/Engadget_login_page.git" class="btn btn-warning"
-                            target="_blank">Show Code</a>
-                        <a href="https://github.com/ritendragour/Engadget_login_page/archive/refs/heads/main.zip"
-                            class="btn btn-info">Download</a>
-                    </div>
-                </div>
-            </div>
-            <!--Netflix  -->
-            <div class="project">
-                <div class="img-section">
-                    <a href="https://ritendragour.github.io/netflix-clone/" target="_blank"><img src="./img/netflix.png"
-                            alt="" class="ures" /></a>
-                </div>
-                <div class="text">
-                    <h1>Netflix</h1>
-                    <a href="https://ritendragour.github.io/netflix-clone/" target="_blank"><img src="./img/netflix.png"
-                            alt="" class="res" /></a>
-                    <p style="font-size: 17px">
-                        Using HTML , CSS .
-                        <br />
-                        Netflix website clone
-                    </p>
-                    <div class="btn-section">
-                        <a href="https://ritendragour.github.io/netflix-clone/" class="btn btn-success"
-                            target="_blank">Go Live</a>
-                        <a href="https://github.com/ritendragour/netflix-clone.git" class="btn btn-warning"
-                            target="_blank">Show Code</a>
-                        <a href="https://github.com/ritendragour/netflix-clone/archive/refs/heads/main.zip"
-                            class="btn btn-info">Download</a>
-                    </div>
-                </div>
-            </div>
-            <!-- whatsapp -->
-            <div class="project">
-                <div class="img-section">
-                    <a href="https://ritendragour.github.io/web-whatsapp" target="_blank"><img
-                            src="./img/web-whatapp.png" alt="" class="ures" /></a>
-                </div>
-                <div class="text">
-                    <h1>Web Whatsapp</h1>
-                    <a href="https://ritendragour.github.io/web-whatsapp" target="_blank"><img
-                            src="./img/web-whatapp.png" alt="" class="res" /></a>
-                    <p style="font-size: 17px">
-                        Using HTML , CSS .
-                        <br />
-                        Web Whatsapp clone
-                    </p>
-                    <div class="btn-section">
-                        <a href="https://ritendragour.github.io/web-whatsapp" class="btn btn-success" target="_blank">Go
-                            Live</a>
-                        <a href="https://github.com/ritendragour/web-whatsapp.git" class="btn btn-warning"
-                            target="_blank">Show Code</a>
-                        <a href="https://github.com/ritendragour/web-whatsapp/archive/refs/heads/main.zip"
-                            class="btn btn-info">Download</a>
-                    </div>
-                </div>
-            </div>
-            <!-- UI -->
-
-            <!-- Warsty -->
-            <h1 class="project_category"><u>User Interface</u></h1>
-            <div class="project">
-                <div class="img-section">
-                    <a href="https://ritendragour.github.io/Warsty/" target="_blank"><img src="./img/was.png" alt=""
-                            class="ures" /></a>
-                </div>
-                <div class="text">
-                    <h1>Warsty</h1>
-                    <a href="https://ritendragour.github.io/Warsty/" target="_blank"><img src="./img/was.png" alt=""
-                            class="res" /></a>
-                    <p style="font-size: 17px">
-                        Using HTML , CSS .
-                        <br />
-                        Warsty User Interface
-                    </p>
-                    <div class="btn-section">
-                        <a href="https://ritendragour.github.io/Warsty/" class="btn btn-success" target="_blank">Go
-                            Live</a>
-                        <a href="https://github.com/ritendragour/Warsty.git" class="btn btn-warning"
-                            target="_blank">Show Code</a>
-                        <a href="https://github.com/ritendragour/Warsty/archive/refs/heads/main.zip"
-                            class="btn btn-info">Download</a>
-                    </div>
-                </div>
-            </div>
-            <!-- descente -->
-            <div class="project">
-                <div class="img-section">
-                    <a href="https://ritendragour.github.io/descente/" target="_blank"><img src="./img/Descente.png"
-                            alt="" class="ures" /></a>
-                </div>
-                <div class="text">
-                    <h1>Descente</h1>
-                    <a href="https://ritendragour.github.io/descente/" target="_blank"><img src="./img/Descente.png"
-                            alt="" class="res" /></a>
-                    <p style="font-size: 17px">
-                        Using HTML , CSS .
-                        <br />
-                        Descente User Interface
-                    </p>
-                    <div class="btn-section">
-                        <a href="https://ritendragour.github.io/descente/" class="btn btn-success" target="_blank">Go
-                            Live</a>
-                        <a href="https://github.com/ritendragour/descente.git" class="btn btn-warning"
-                            target="_blank">Show Code</a>
-                        <a href="https://github.com/ritendragour/descente/archive/refs/heads/main.zip"
-                            class="btn btn-info">Download</a>
-                    </div>
-                </div>
-            </div>
-            <!-- Italian-leather-perfume -->
-            <div class="project">
-                <div class="img-section">
-                    <a href="https://ritendragour.github.io/Italian-leather-perfume-UI/" target="_blank"><img
-                            src="./img/Italian-leather-perfume.png" alt="" class="ures" /></a>
-                </div>
-                <div class="text">
-                    <h1>Italian leather perfume</h1>
-                    <a href="https://ritendragour.github.io/Italian-leather-perfume-UI/" target="_blank"><img
-                            src="./img/Italian-leather-perfume.png" alt="" class="res" /></a>
-                    <p style="font-size: 17px">
-                        Using HTML , CSS .
-                        <br />
-                        Italian leather perfume UI
-                    </p>
-                    <div class="btn-section">
-                        <a href="https://ritendragour.github.io/Italian-leather-perfume-UI/" class="btn btn-success"
-                            target="_blank">Go Live</a>
-                        <a href="https://github.com/ritendragour/Italian-leather-perfume-UI.git" class="btn btn-warning"
-                            target="_blank">Show Code</a>
-                        <a href="https://github.com/ritendragour/Italian-leather-perfume-UI/archive/refs/heads/main.zip"
-                            class="btn btn-info">Download</a>
-                    </div>
-                </div>
-            </div>
-            <!-- GM 2 -->
-            <div class="project">
-                <div class="img-section">
-                    <a href="https://ritendragour.github.io/GM2/" target="_blank"><img src="./img/gm2.png" alt=""
-                            class="ures" /></a>
-                </div>
-                <div class="text">
-                    <h1>GM 2</h1>
-                    <a href="https://ritendragour.github.io/GM2/" target="_blank"><img src="./img/gm2.png" alt=""
-                            class="res" /></a>
-                    <p style="font-size: 17px">
-                        Using HTML , CSS .
-                        <br />
-                        GM 2 User Interface
-                    </p>
-                    <div class="btn-section">
-                        <a href="https://ritendragour.github.io/GM2/" class="btn btn-success" target="_blank">Go
-                            Live</a>
-                        <a href="https://github.com/ritendragour/GM2.git" class="btn btn-warning" target="_blank">Show
-                            Code</a>
-                        <a href="https://github.com/ritendragour/GM2/archive/refs/heads/main.zip"
-                            class="btn btn-info">Download</a>
-                    </div>
-                </div>
-            </div>
-            <!--SOLARRIUS  -->
-            <div class="project">
-                <div class="img-section">
-                    <a href="https://ritendragour.github.io/SOLARRIUS/" target="_blank"><img src="./img/SOLARRIUS.png"
-                            alt="" class="ures" /></a>
-                </div>
-                <div class="text">
-                    <h1>SOLARRIUS</h1>
-                    <a href="https://ritendragour.github.io/SOLARRIUS/" target="_blank"><img src="./img/SOLARRIUS.png"
-                            alt="" class="res" /></a>
-                    <p style="font-size: 17px">
-                        Using HTML , CSS .
-                        <br />
-                        SOLARRIUS User Interface
-                    </p>
-                    <div class="btn-section">
-                        <a href="https://ritendragour.github.io/SOLARRIUS/" class="btn btn-success" target="_blank">Go
-                            Live</a>
-                        <a href="https://github.com/ritendragour/SOLARRIUS.git" class="btn btn-warning"
-                            target="_blank">Show Code</a>
-                        <a href="https://github.com/ritendragour/SOLARRIUS/archive/refs/heads/main.zip"
-                            class="btn btn-info">Download</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div id="main-contact" style="display: none">
-            <div class="contact" style="border-top: 1px solid white; padding-top: 60px">
-                <h1 class="text-center" style="color: white"><u>Contact Us</u></h1>
-
-                <div class="container py-4">
-                    <form id="contactForm">
-                        <!-- Name input -->
-                        <div class="mb-3">
-                            <label class="form-label" for="cName">Full Name</label>
-                            <input class="form-control" id="cName" type="text" placeholder="Full Name"
-                                style="padding: 20px" required />
-                        </div>
-
-                        <!-- Email address input -->
-                        <div class="mb-3">
-                            <label class="form-label" for="cEmail">Email Address</label>
-                            <input class="form-control" id="cEmail" type="email" placeholder="Email Address" required />
-                        </div>
-
-                        <!-- Email address input -->
-                        <div class="mb-3 py-200px">
-                            <label class="form-label" for="cPhone">Phone number</label>
-                            <input class="form-control" id="cPhone" type="tel" placeholder="Phone number" required />
-                        </div>
-
-                        <!-- Message input -->
-                        <div class="mb-3">
-                            <label class="form-label" for="cMessage">Message</label>
-                            <textarea class="form-control" id="cMessage" type="text" placeholder="Message"
-                                style="height: 10rem" required></textarea>
-                        </div>
-
-                        <!-- Google recaptcha -->
-                            <!--<div class="g-recaptcha" id="googleRecaptcha" data-sitekey="6Ld3j3UkAAAAAEWkGbNpt0PAHiv_7R8DXQuQt7Kf" required="false"></div>-->
-                        
-                            <!-- Form submit button -->
-                        <div class="d-grid">
-                            <button class="btn btn-light btn-lg" style="margin-top: 10px" type="submit" onclick="sendEmail()">Send Message</button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-            <div class="container">
-                <!-- map -->
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1787.500837211125!2d75.88366098429658!3d22.73726444321162!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3962fd44d1beb083%3A0xf997696d678db324!2sAtal%20Dwar%2C%20HIG%20Main%20Rd%2C%20Near%20MIG%20Thana%2C%20Nehru%20Nagar%2C%20Indore%2C%20Madhya%20Pradesh%20452003!5e0!3m2!1sen!2sin!4v1675956606003!5m2!1sen!2sin"
-                    class="map" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
-        </div>
-        <footer>
-            <div class="custom-container">
-                <div class="row">
-                    <div class="details">
-                        <h3>PERSONAL INFO</h3>
-                        <ul>
-                            <li style="font-size: 18px">NAME : Ritendra Gour</li>
-                            <li>
-                                CONTACT US :
-                                <a href="tel:9826964395" class="change_color">9826964395</a>
-                            </li>
-                            <!--<li>-->
-                            <!--    EMAIL :-->
-                            <!--    <a href="mailto:ritendragour5@gmail.com"-->
-                            <!--        class="change_color">ritendragour5@gmail.com</a>-->
-                            <!--</li>-->
-                            <li>
-                                EMAIL :
-                                <a href="mailto:info@ritendra.tech"
-                                    class="change_color">info@ritendra.tech</a>
-                            </li>
-                            <li>
-                                EMAIL :
-                                <a href="mailto:support@ritendra.tech"
-                                    class="change_color">support@ritendra.tech</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="qualificaton">
-                        <h3>QUALIFICATIONS</h3>
-                        <ul>
-                            <li>DIPLOMA : Reactjs Nodejs</li>
-                            <li>POST GRADUATION : M.sc (cs)</li>
-                            <li>UNDER GRADUATION : B.sc (cs)</li>
-                        </ul>
-                    </div>
-                    <div class="about-us">
-                        <div class="text">
-                            <h3>ADDRESS</h3>
-                            <p>
-                                Nehru nagar, near by Atal dwar <br />
-                                Indore, Pincode : 452001(M.P.)
-                            </p>
-                            <p>
-                                Birthplace - seoni malwa<br />
-                                Dist - Narmadapuram (M.P.)
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="qualificaton">
-                        <h3>EXPLORE MENU &nbsp;&nbsp;</h3>
-                        <ul>
-                            <li>
-                                <a href="#" class="change_color" onclick="homeShow()">Home</a>
-                            </li>
-                            <li>
-                                <a href="#about" onclick="aboutShow()" class="change_color">About</a>
-                            </li>
-                            <li>
-                                <a href="#Skills" onclick="skillsShow()" class="change_color">Skills</a>
-                            </li>
-                            <li>
-                                <a href="#main-project" onclick="projectShow()" class="change_color">Project</a>
-                            </li>
-                            <li>
-                                <a href="#main-contact" onclick="contactShow()" class="change_color">Contact</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="social-icon">
-                <ul>
-                    <li>
-                        <a href="tel:9826964395"><i class="fa fa-phone"></i></a>
-                    </li>
-                    <li>
-                        <a href="mailto:info@ritendra.tech"><i class="fa fa-envelope"></i></a>
-                    </li>
-                    <li>
-                        <a href="https://www.linkedin.com/feed/"><i class="fa fa-linkedin"></i></a>
-                    </li>
-                    <li>
-                        <a href="https://www.facebook.com/ritendra.gour.77/"><i class="fa fa-facebook-f"></i></a>
-                    </li>
-                    <li>
-                        <a href="https://www.instagram.com/ritendra_gour/"><i class="fa fa-instagram"></i></a>
-                    </li>
-                    <li>
-                        <a href="https://mobile.twitter.com/ritendragour1"><i class="fa fa-twitter ures"></i></a>
-                    </li>
-                </ul>
-            </div>
-        </footer>
-    </div>
-    <div class="footer-main">
-        <span><i class="fa fa-copyright"></i> 2023 Powered by Ritendra Gour
-            <a href="https://in.linkedin.com/in/ritendra-gour-b33739228?trk=people_directo" target="_blank"></a>
+<body class="bg">
+  <div class="center">
+    <div class="note">
+      <h1 class="dfc">Welcome to My Portfolio
+      </h1>
+      <br>
+      <h2 class="dfc"><u>Please Visit website </u></h2>
+      <h1>
+        <span class="df other">
+          <a href="./old_index.html" class="btn btn-warning text-dark w-40" target="_blank">
+            << &nbsp; Basic Website &nbsp; >></a>
+              <a href="//ritendra.in" class="btn btn-success w-40 text-light" target="_blank"><< &nbsp; Latest Website &nbsp;
+                        <i class="fa fa-hand-pointer-o" style="font-size:22px"></i></a>
         </span>
+      </h1>
+      <h3 class="dfc">
+        <p>For any queries please contact </p> &nbsp;&nbsp;
+        <i class="fa fa-envelope"></i> &nbsp;:&nbsp;
+        <a href="mailto:info@ritendra.in" target="_blank">info@ritendra.in</a>
+      </h3><br>
+
     </div>
-
-    <script src="https://www.google.com/recaptcha/api.js"></script>
-    <!-- <script>
-    function onSubmit(token) {
-        document.getElementById("contactForm").submit();
-    }
-    </script> -->
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
-    <script src="./main.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        AOS.init();
-    </script>
+  </div>
 </body>
-
 </html>

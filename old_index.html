@@ -1,0 +1,1089 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./img/my_pic.png" type="image/x-icon" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+        
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <meta name="google-site-verification" content="VsD5f6zDoFs4QSRkaMdqcSn0_Lar4qlZcV5e--HYbaE" />
+    <title>Ritendra</title>
+    <style>
+    *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: 2px solid red; */
+}
+body{
+    background: rgb(0,212,255);
+    background: linear-gradient(90deg, rgba(0,212,255,1) 0%, rgba(73,73,175,1) 47%, rgba(0,212,255,1) 100%);
+}
+nav{
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+    padding: 15px 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #ede4e4;
+    background: rgb(0,212,255);
+    background: linear-gradient(90deg, rgba(0,212,255,1) 0%, rgba(73,73,175,1) 47%, rgba(0,212,255,1) 100%);
+}
+.call{
+    position: fixed;
+    left: 50px;
+    bottom: 20px;
+    z-index: 1;
+}
+.call a{
+    font-size: 50px;
+    color: black;
+}
+.call a:hover{
+    color: rgb(6, 238, 37);
+}
+.main-portfolio{
+    position: relative;
+}
+.main-logo:hover{
+    color: #e96309;
+}
+.main-logo:active{
+    color: #09e93a;
+}
+nav a{
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+nav a:hover{
+    color: #f7f4f2;
+}
+nav a:active{
+    background-color: white;
+    color: #09e93a;
+}
+.header-logo{
+    font-size: 32px;
+    font-weight: 550;
+}
+.header-btn{
+    padding: 0px 40px 0px 0px;
+    width: 40%;
+    font-size: 19px;
+    display: flex;
+    justify-content: space-between;
+}
+.header-btn a{
+    border: 1px solid black;
+    padding: 1px 10px;
+    border-radius: 10px;
+    background-color: rgb(77, 77, 225);
+}
+.home{
+    margin-top: 1px;
+    display: flex;
+    height: 100%;
+    justify-content: space-between;
+    color: white;
+    align-items: center;
+    border-bottom: 1px solid;
+}
+.home-video{
+    position: absolute;
+    width: 100%;
+}
+.home-left{
+    padding-left: 5%;
+    width: 50%;
+}
+.name{
+    padding-left: 12%;
+}
+.btn-default {
+    margin-left: 15%;
+    
+}
+
+.home-right{
+    height: 100vh;
+    width: 50%;
+    background-repeat: no-repeat;
+    padding: 50px;
+    background-image: url(./img/my_pic.png);
+    background-position: center;
+}
+.home-img{
+    width: 80%;
+    height: 10%;
+} 
+.about{
+    padding: 100px;
+    color: white;
+    border-bottom: 1px solid #f4ecec;
+}
+.about-df{
+    display: flex;
+    margin-top: 50px;
+}
+.about-img{
+    width: 50%;
+    height: 60vh;
+    background-image: url(./img/software2.jpeg);
+    background-repeat: no-repeat;  
+    padding: 20px 50px;
+}
+.about-text{
+    width: 50%;
+    padding: 0px 50px;
+}
+.about-text p{
+    font-size: 20px;
+}
+.about-text b{
+    font-size: 20px;
+    color: rgb(226, 218, 218);
+}
+.btn-warning{
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.Skills h1{
+    padding-top: 100px;
+    padding-bottom: 10px;
+}
+.our-skills{
+    padding: 0px 100px;
+    padding-top: 10px;
+    color: white;
+    border-bottom: 1px solid #f4ecec;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 50px;
+    grid-row-gap: 0px;
+}
+.div1 { grid-area: 1 / 1 / 2 / 2; }
+.div2 { grid-area: 1 / 2 / 2 / 3; }
+.div3 { grid-area: 1 / 3 / 2 / 4; }
+.div4 { grid-area: 2 / 1 / 3 / 2; }
+.div5 { grid-area: 2 / 2 / 3 / 3; }
+.div6 { grid-area: 2 / 3 / 3 / 4; }
+.div7 { grid-area: 3 / 1 / 4 / 2; }
+.div8 { grid-area: 3 / 2 / 4 / 3; }
+.div9 { grid-area: 3 / 3 / 4 / 4; }
+.div1,.div2,.div3,.div4,.div5,.div6,.div7,.div8,.div9{
+    padding: 50px;
+}
+.our-skills h4{
+    padding-right: 20px;
+}
+.main-project{
+    background: rgb(0,212,255);
+    background: linear-gradient(90deg, rgba(0,212,255,1) 0%, rgba(73,73,175,1) 0%, rgba(0,212,255,1) 100%);
+}
+.project_category{
+    padding-top: 100px;
+    text-align: center;
+    color: black;
+    color: white;
+}
+.project{
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 50px;
+}
+.project .img-section{ 
+    width: 60%;
+    padding: 0px 100px;
+}
+img{
+    height: 350px;  
+    width: 100%;
+}
+.project .text{
+
+    height: 350px;
+    width: 40%;
+    padding: 0px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.project button:hover{
+    background-color: rgb(192, 176, 176);
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #e8efec;
+  color: rgb(12, 12, 12);
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  display: flex;
+}
+.container {
+  border-radius: 5px;
+  padding: 40px;
+}
+.res{
+    display: none;
+}
+.img-section{
+    display: block;
+}
+/* CONTACT FORM */
+.mb-3{
+    padding: 10px 0px;
+}
+.form-label{
+    padding-left: 5px;
+}
+.form-control{
+    padding: 20px;
+}
+/* footer */
+.custom-container {
+    background: rgb(0,212,255);
+    background: linear-gradient(90deg, rgba(0,212,255,1) 0%, rgba(73,73,175,1) 47%, rgba(0,212,255,1) 100%);
+    color: white;
+    width: 100%; 
+    padding-top:30px;
+    font-size: 17px;
+    margin: auto;
+    border-top: 1px solid #ede5e5;
+}
+.social-icon{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+.social-icon li {
+    list-style-type: none;
+    display: inline-flex;
+    font-size: 20px;
+    margin: 10px;
+}
+.social-icon i {
+    border: 1px solid #fffcfc;
+    padding: 10px;
+    font-size: 20px !important;
+    border-radius: 50%;
+    color: white;
+}
+i:hover{border:1px solid #3903e9;color:#0923e9;}
+.row {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.details li {
+    padding: 0px;
+    list-style-type: none;
+    margin: 10px 0px;
+}
+ul {
+    padding: 0px;
+}
+.qualificaton li {
+    list-style-type: none;
+    margin: 10px 0px;
+}
+.footer-main{
+    border-top: 1px solid #f9f0f0;
+    margin-top: 10px;
+    padding: 10px;
+    color: white;
+    text-align: center;
+    font-size: 150%;
+}
+.change_color{
+   color: white;
+   font-size: 18px;
+}
+.change_color:hover{
+    color: white;
+ }
+.map{
+    border: none;
+    width:100%;
+    height:500px;
+    margin-top: 10px;
+}
+.ures{
+    display: block;
+}
+@media(max-width:1006px){
+    .res{
+        display: block;
+    }
+    .main-logo{
+        margin-right: 10px;
+    }
+    h1{
+        margin-top: 0px;
+    }
+    .container{
+        padding: 0px;
+    }
+    .img-section ,.home-right{
+        display: none;
+    }
+    .home{
+        padding-bottom: 20px;
+    }
+    .home-left{
+        width: 100%;
+    }
+    .home-left h1{
+        font-size: 34px;
+    }
+    .home-left h2{
+        margin-top: 0px;
+    }
+    .project{
+        padding: 10px;
+        flex-direction: column;
+        width: 100%;
+    }
+    .project .img-section{       
+        height: 450px;
+        width: 100%;
+        padding: 10px 0px;
+    }
+    img{
+        height: 350px;
+    }
+    .project .text{
+    
+        height: 450px;
+        width: 100%;
+        padding: 10px 00px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .row {
+        flex-direction: column;
+       align-items: center;
+       justify-content: center;
+    }
+    .contact{
+        padding: 10px;
+    }
+}
+@media(min-width:540px){
+    .project{
+        padding: 50px 10px;
+    }
+}
+@media(max-width: 990px) and (min-width: 440px){
+    nav{
+        padding: 8px;     
+        justify-content: flex-start;
+    }
+    .name{
+        padding: 0px;
+    }
+}
+/* 440px before */
+@media(max-width:476px){ 
+  nav{
+        padding: 0px;
+        flex-direction: column;
+        align-items: center;      
+    }
+    .name {
+        padding-left: 0%;
+    }
+    nav h1{
+        align-items: center;
+    }
+    .header-btn{
+        padding: 0px;
+        width: auto;
+        padding: 10px;
+    }
+    .header-btn a{
+        padding: 1px 5px;
+        margin-right: 2px;
+    }
+    .project{
+        padding: 70px 10px;
+    }
+}
+@media(max-width:768px){  
+    .ures{
+        display: none;
+    }
+    .map{
+        padding: 15px 12px;
+    }
+    .header-logo{
+        margin-top: 8px;
+    }
+    /*.btn-default {*/
+    /*    margin-top: 15px;*/
+    /*    margin-left: 32%;*/
+    /*}*/
+    .about{
+        padding: 20px;
+    }
+    .about-df{
+        display: flex;
+        flex-direction: column;
+    }
+    .about-img{
+        display: none;
+    }
+    .about-text{
+        width: 100%;
+        padding: 10px;
+    }
+    .about-text p{
+        font-size: 20px;
+    }
+    .about-text b{
+        font-size: 20px;
+    }
+    .our-skills {
+        padding: 10px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(9, 1fr);
+        grid-column-gap: 5px;
+        grid-row-gap: 10px;
+        }
+        
+        .div1 { grid-area: 1 / 1 / 2 / 2; }
+        .div2 { grid-area: 2 / 1 / 3 / 2; }
+        .div3 { grid-area: 3 / 1 / 4 / 2; }
+        .div4 { grid-area: 4 / 1 / 5 / 2; }
+        .div5 { grid-area: 5 / 1 / 6 / 2; }
+        .div6 { grid-area: 6 / 1 / 7 / 2; }
+        .div7 { grid-area: 7 / 1 / 8 / 2; }
+        .div8 { grid-area: 8 / 1 / 9 / 2; }
+        .div9 { grid-area: 9 / 1 / 10 / 2; }
+}
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="header-logo">
+            <a href="#" class="main-logo" onclick="homeShow()">Ritendra</a>
+        </div>
+        <div class="header-btn">
+            <a href="#" class="ures" onclick="homeShow()">Home</a>
+            <a href="#about" onclick="aboutShow()">About</a>
+            <a href="#Skills" onclick="skillsShow()">Skills</a>
+            <a href="#main-project" onclick="projectShow()">Project</a>
+            <a href="#main-contact" onclick="contactShow()">Contact</a>
+        </div>
+        
+                 <span>   
+                 <a href="mailto:info@ritendra.in" target="_blank"
+                                    class="change_color ures border border-secondary"><h5>&nbsp;&nbsp;info@ritendra.in</h5></a>
+                 <a href="https://ritendra.in" target="_blank"
+                                    class="btn btn-warning ures text-dark " style="border: 2px solid black;">Latest Portfolio</a>
+                </span>                    
+    </nav>
+
+    <!-- testing SMTP Start -->
+    <!-- <input type="button" value="Send Email" onclick="sendEmail()"> -->
+    <!-- testing SMTP End -->
+
+    <div class="call">
+        <a href="https://github.com/ritendragour" target="_blank"><i class="fa fa-github"></i></a>
+    </div>
+    <div class="main-portfolio">
+        <div class="home" id="home">
+            <div class="home-left">
+                <h1>Hey ,</h1>
+                <div class="name">
+                    <h1>I'm Ritendra Gour</h1>
+                    <h2>Software Developer</h2>
+                </div>
+                <img src="./img/my_pic.png" alt="Ritendra's Image" class="res" />
+                
+                <span>
+                <a href="https://ritendra.in/contact-us" target="_blank" class="btn btn-default" style="margin-left: 15%;" onclick="contactShow()">Contact Us</a>
+                   <a href="https://ritendra.in" target="_blank"
+                                    class="btn btn-warning text-dark" style="border: 1px solid black; , color:black">Latest Portfolio</a>
+                </span>                    
+            </div>
+            <div class="home-right"></div>
+        </div>
+        <div class="about" id="about" style="display: none">
+            <h1 class="text-center"><u>About</u></h1>
+            <div class="about-df">
+                <div class="about-img" data-aos="fade-up-right"></div>
+                <div class="about-text">
+                    <p>I am Ritendra gour</p>
+                    <p>
+                        a Full Stack Web Developer. I have done many major projects as
+                        full stack developer.
+                    </p>
+                    <p>I am a detail-oriented and creative software developer .</p>
+                    <p>I am so passionate and dedicated to my work.</p>
+                    <p>
+                        I am working in different Language like Reactjs, JavaScript, HTML,
+                        CSS, PHP, MySQL, WordPress, jquery and Java .
+                    </p>
+                    <p>I have Master’s degree from the Devi Ahilya Vishwavidyalay</p>
+                    <p><b> Work Place:</b> Click Spurr LTD Soctland (U.K.)</p>
+                    <p><b> Education:</b> Devi Ahilya Vishwavidyalaya</p>
+                    <p><b>Hometown:</b> Indore</p>
+                </div>
+            </div>
+        </div>
+        <div class="Skills" id="Skills" style="display: none">
+            <h1 class="text-center" style="color: white"><u>Our Skills</u></h1>
+            <div class="our-skills">
+                <div class="div1">
+                    <span><img src="./img/html.png" alt="" /></span>
+                    <input type="range" value="83" disabled />
+                    <h4 class="text-right">83%</h4>
+                </div>
+                <div class="div2">
+                    <img src="./img/css.png" alt="" />
+                    <input type="range" value="72" disabled />
+                    <h4 class="text-right">72%</h4>
+                </div>
+                <div class="div3">
+                    <img src="./img/js.png" alt="" />
+                    <input type="range" value="77" disabled />
+                    <h4 class="text-right">77%</h4>
+                </div>
+                <div class="div4">
+                    <img src="./img/reactjs.png" alt="" />
+                    <input type="range" value="66" disabled />
+                    <h4 class="text-right">66%</h4>
+                </div>
+                <div class="div5">
+                    <img src="./img/php.png" alt="" />
+                    <input type="range" value="74" disabled />
+                    <h4 class="text-right">74%</h4>
+                </div>
+                <div class="div6">
+                    <img src="./img/wp.png" alt="" />
+                    <input type="range" value="93" disabled />
+                    <h4 class="text-right">93%</h4>
+                </div>
+                <div class="div7">
+                    <img src="./img/mysql.png" alt="" />
+                    <input type="range" value="80" disabled />
+                    <h4 class="text-right">80%</h4>
+                </div>
+                <div class="div8">
+                    <img src="./img/java.png" alt="" />
+                    <input type="range" value="40" disabled />
+                    <h4 class="text-right">40%</h4>
+                </div>
+                <div class="div9">
+                    <img src="./img/jquery.png" alt="" />
+                    <input type="range" value="92" disabled />
+                    <h4 class="text-right">92%</h4>
+                </div>
+            </div>
+        </div>
+        <div id="main-project" style="display: none">
+            <h1 class="project_category"><u>Website Clone</u></h1>
+
+            <!-- microsoft login page -->
+            <div class="project">
+                <div class="img-section">
+                    <a href="https://ritendragour.github.io/microsoft-login-page/" target="_blank"><img
+                            src="./img/mlogin.png" alt="" class="ures" /></a>
+                </div>
+                <div class="text">
+                    <h1>Microsoft login page</h1>
+                    <a href="https://ritendragour.github.io/microsoft-login-page/" target="_blank"><img
+                            src="./img/mlogin.png" alt="" class="res" /></a>
+                    <p style="font-size: 17px">
+                        Using HTML , CSS .
+                        <br />
+                        Microsoft login page clone
+                    </p>
+                    <div class="btn-section">
+                        <a href="https://ritendragour.github.io/microsoft-login-page/" class="btn btn-success"
+                            target="_blank">Go Live</a>
+                        <a href="https://github.com/ritendragour/microsoft-login-page.git" class="btn btn-warning"
+                            target="_blank">Show Code</a>
+                        <a href="https://github.com/ritendragour/microsoft-login-page/archive/refs/heads/main.zip"
+                            class="btn btn-info">Download</a>
+                    </div>
+                </div>
+            </div>
+            <!-- microsoft website -->
+            <div class="project">
+                <div class="img-section">
+                    <a href="https://ritendragour.github.io/microsoft-website/" target="_blank"><img
+                            src="./img/mwebsite.png" alt="" class="ures" /></a>
+                </div>
+                <div class="text">
+                    <h1>Microsoft website</h1>
+                    <a href="https://ritendragour.github.io/microsoft-website/" target="_blank"><img
+                            src="./img/mwebsite.png" alt="" class="res" /></a>
+                    <p style="font-size: 17px">
+                        Using HTML , CSS .
+                        <br />
+                        Microsoft website clone
+                    </p>
+                    <div class="btn-section">
+                        <a href="https://ritendragour.github.io/microsoft-website/" class="btn btn-success"
+                            target="_blank">Go Live</a>
+                        <a href="https://github.com/ritendragour/microsoft-website.git" class="btn btn-warning"
+                            target="_blank">Show Code</a>
+                        <a href="https://github.com/ritendragour/microsoft-website/archive/refs/heads/main.zip"
+                            class="btn btn-info">Download</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Engadget_login_page -->
+            <div class="project">
+                <div class="img-section">
+                    <a href="https://ritendragour.github.io/Engadget_login_page/" target="_blank"><img
+                            src="./img/elogin.png" alt="" class="ures" /></a>
+                </div>
+                <div class="text">
+                    <h1>Engadget login page</h1>
+                    <a href="https://ritendragour.github.io/Engadget_login_page/" target="_blank"><img
+                            src="./img/elogin.png" alt="" class="res" /></a>
+                    <p style="font-size: 17px">
+                        Using HTML , CSS .
+                        <br />
+                        Engadget login page clone
+                    </p>
+                    <div class="btn-section">
+                        <a href="https://ritendragour.github.io/Engadget_login_page/" class="btn btn-success"
+                            target="_blank">Go Live</a>
+                        <a href="https://github.com/ritendragour/Engadget_login_page.git" class="btn btn-warning"
+                            target="_blank">Show Code</a>
+                        <a href="https://github.com/ritendragour/Engadget_login_page/archive/refs/heads/main.zip"
+                            class="btn btn-info">Download</a>
+                    </div>
+                </div>
+            </div>
+            <!--Netflix  -->
+            <div class="project">
+                <div class="img-section">
+                    <a href="https://ritendragour.github.io/netflix-clone/" target="_blank"><img src="./img/netflix.png"
+                            alt="" class="ures" /></a>
+                </div>
+                <div class="text">
+                    <h1>Netflix</h1>
+                    <a href="https://ritendragour.github.io/netflix-clone/" target="_blank"><img src="./img/netflix.png"
+                            alt="" class="res" /></a>
+                    <p style="font-size: 17px">
+                        Using HTML , CSS .
+                        <br />
+                        Netflix website clone
+                    </p>
+                    <div class="btn-section">
+                        <a href="https://ritendragour.github.io/netflix-clone/" class="btn btn-success"
+                            target="_blank">Go Live</a>
+                        <a href="https://github.com/ritendragour/netflix-clone.git" class="btn btn-warning"
+                            target="_blank">Show Code</a>
+                        <a href="https://github.com/ritendragour/netflix-clone/archive/refs/heads/main.zip"
+                            class="btn btn-info">Download</a>
+                    </div>
+                </div>
+            </div>
+            <!-- whatsapp -->
+            <div class="project">
+                <div class="img-section">
+                    <a href="https://ritendragour.github.io/web-whatsapp" target="_blank"><img
+                            src="./img/web-whatapp.png" alt="" class="ures" /></a>
+                </div>
+                <div class="text">
+                    <h1>Web Whatsapp</h1>
+                    <a href="https://ritendragour.github.io/web-whatsapp" target="_blank"><img
+                            src="./img/web-whatapp.png" alt="" class="res" /></a>
+                    <p style="font-size: 17px">
+                        Using HTML , CSS .
+                        <br />
+                        Web Whatsapp clone
+                    </p>
+                    <div class="btn-section">
+                        <a href="https://ritendragour.github.io/web-whatsapp" class="btn btn-success" target="_blank">Go
+                            Live</a>
+                        <a href="https://github.com/ritendragour/web-whatsapp.git" class="btn btn-warning"
+                            target="_blank">Show Code</a>
+                        <a href="https://github.com/ritendragour/web-whatsapp/archive/refs/heads/main.zip"
+                            class="btn btn-info">Download</a>
+                    </div>
+                </div>
+            </div>
+            <!-- UI -->
+
+            <!-- Warsty -->
+            <h1 class="project_category"><u>User Interface</u></h1>
+            <div class="project">
+                <div class="img-section">
+                    <a href="https://ritendragour.github.io/Warsty/" target="_blank"><img src="./img/was.png" alt=""
+                            class="ures" /></a>
+                </div>
+                <div class="text">
+                    <h1>Warsty</h1>
+                    <a href="https://ritendragour.github.io/Warsty/" target="_blank"><img src="./img/was.png" alt=""
+                            class="res" /></a>
+                    <p style="font-size: 17px">
+                        Using HTML , CSS .
+                        <br />
+                        Warsty User Interface
+                    </p>
+                    <div class="btn-section">
+                        <a href="https://ritendragour.github.io/Warsty/" class="btn btn-success" target="_blank">Go
+                            Live</a>
+                        <a href="https://github.com/ritendragour/Warsty.git" class="btn btn-warning"
+                            target="_blank">Show Code</a>
+                        <a href="https://github.com/ritendragour/Warsty/archive/refs/heads/main.zip"
+                            class="btn btn-info">Download</a>
+                    </div>
+                </div>
+            </div>
+            <!-- descente -->
+            <div class="project">
+                <div class="img-section">
+                    <a href="https://ritendragour.github.io/descente/" target="_blank"><img src="./img/Descente.png"
+                            alt="" class="ures" /></a>
+                </div>
+                <div class="text">
+                    <h1>Descente</h1>
+                    <a href="https://ritendragour.github.io/descente/" target="_blank"><img src="./img/Descente.png"
+                            alt="" class="res" /></a>
+                    <p style="font-size: 17px">
+                        Using HTML , CSS .
+                        <br />
+                        Descente User Interface
+                    </p>
+                    <div class="btn-section">
+                        <a href="https://ritendragour.github.io/descente/" class="btn btn-success" target="_blank">Go
+                            Live</a>
+                        <a href="https://github.com/ritendragour/descente.git" class="btn btn-warning"
+                            target="_blank">Show Code</a>
+                        <a href="https://github.com/ritendragour/descente/archive/refs/heads/main.zip"
+                            class="btn btn-info">Download</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Italian-leather-perfume -->
+            <div class="project">
+                <div class="img-section">
+                    <a href="https://ritendragour.github.io/Italian-leather-perfume-UI/" target="_blank"><img
+                            src="./img/Italian-leather-perfume.png" alt="" class="ures" /></a>
+                </div>
+                <div class="text">
+                    <h1>Italian leather perfume</h1>
+                    <a href="https://ritendragour.github.io/Italian-leather-perfume-UI/" target="_blank"><img
+                            src="./img/Italian-leather-perfume.png" alt="" class="res" /></a>
+                    <p style="font-size: 17px">
+                        Using HTML , CSS .
+                        <br />
+                        Italian leather perfume UI
+                    </p>
+                    <div class="btn-section">
+                        <a href="https://ritendragour.github.io/Italian-leather-perfume-UI/" class="btn btn-success"
+                            target="_blank">Go Live</a>
+                        <a href="https://github.com/ritendragour/Italian-leather-perfume-UI.git" class="btn btn-warning"
+                            target="_blank">Show Code</a>
+                        <a href="https://github.com/ritendragour/Italian-leather-perfume-UI/archive/refs/heads/main.zip"
+                            class="btn btn-info">Download</a>
+                    </div>
+                </div>
+            </div>
+            <!-- GM 2 -->
+            <div class="project">
+                <div class="img-section">
+                    <a href="https://ritendragour.github.io/GM2/" target="_blank"><img src="./img/gm2.png" alt=""
+                            class="ures" /></a>
+                </div>
+                <div class="text">
+                    <h1>GM 2</h1>
+                    <a href="https://ritendragour.github.io/GM2/" target="_blank"><img src="./img/gm2.png" alt=""
+                            class="res" /></a>
+                    <p style="font-size: 17px">
+                        Using HTML , CSS .
+                        <br />
+                        GM 2 User Interface
+                    </p>
+                    <div class="btn-section">
+                        <a href="https://ritendragour.github.io/GM2/" class="btn btn-success" target="_blank">Go
+                            Live</a>
+                        <a href="https://github.com/ritendragour/GM2.git" class="btn btn-warning" target="_blank">Show
+                            Code</a>
+                        <a href="https://github.com/ritendragour/GM2/archive/refs/heads/main.zip"
+                            class="btn btn-info">Download</a>
+                    </div>
+                </div>
+            </div>
+            <!--SOLARRIUS  -->
+            <div class="project">
+                <div class="img-section">
+                    <a href="https://ritendragour.github.io/SOLARRIUS/" target="_blank"><img src="./img/SOLARRIUS.png"
+                            alt="" class="ures" /></a>
+                </div>
+                <div class="text">
+                    <h1>SOLARRIUS</h1>
+                    <a href="https://ritendragour.github.io/SOLARRIUS/" target="_blank"><img src="./img/SOLARRIUS.png"
+                            alt="" class="res" /></a>
+                    <p style="font-size: 17px">
+                        Using HTML , CSS .
+                        <br />
+                        SOLARRIUS User Interface
+                    </p>
+                    <div class="btn-section">
+                        <a href="https://ritendragour.github.io/SOLARRIUS/" class="btn btn-success" target="_blank">Go
+                            Live</a>
+                        <a href="https://github.com/ritendragour/SOLARRIUS.git" class="btn btn-warning"
+                            target="_blank">Show Code</a>
+                        <a href="https://github.com/ritendragour/SOLARRIUS/archive/refs/heads/main.zip"
+                            class="btn btn-info">Download</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="main-contact" style="display: none">
+            <div class="contact" style="border-top: 1px solid white; padding-top: 60px">
+                <h1 class="text-center" style="color: white"><u>Contact Us</u></h1>
+
+                <div class="container py-4">
+                    <form id="contactForm">
+                        <!-- Name input -->
+                        <div class="mb-3">
+                            <label class="form-label" for="cName">Full Name</label>
+                            <input class="form-control" id="cName" type="text" placeholder="Full Name"
+                                style="padding: 20px" required />
+                        </div>
+
+                        <!-- Email address input -->
+                        <div class="mb-3">
+                            <label class="form-label" for="cEmail">Email Address</label>
+                            <input class="form-control" id="cEmail" type="email" placeholder="Email Address" required />
+                        </div>
+
+                        <!-- Email address input -->
+                        <div class="mb-3 py-200px">
+                            <label class="form-label" for="cPhone">Phone number</label>
+                            <input class="form-control" id="cPhone" type="tel" placeholder="Phone number" required />
+                        </div>
+
+                        <!-- Message input -->
+                        <div class="mb-3">
+                            <label class="form-label" for="cMessage">Message</label>
+                            <textarea class="form-control" id="cMessage" type="text" placeholder="Message"
+                                style="height: 10rem" required></textarea>
+                        </div>
+                        <!-- Google recaptcha -->
+                            <!--<div class="g-recaptcha" id="googleRecaptcha" data-sitekey="6Ld3j3UkAAAAAEWkGbNpt0PAHiv_7R8DXQuQt7Kf" required="false"></div>-->
+                        
+                            <!-- Form submit button -->
+                        <div class="d-grid">
+                            <button class="btn btn-light btn-lg" style="margin-top: 10px" type="submit" onclick="sendEmail()">Send Message</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="container">
+                <!-- map -->
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1787.500837211125!2d75.88366098429658!3d22.73726444321162!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3962fd44d1beb083%3A0xf997696d678db324!2sAtal%20Dwar%2C%20HIG%20Main%20Rd%2C%20Near%20MIG%20Thana%2C%20Nehru%20Nagar%2C%20Indore%2C%20Madhya%20Pradesh%20452003!5e0!3m2!1sen!2sin!4v1675956606003!5m2!1sen!2sin"
+                    class="map" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+        <footer>
+            <div class="custom-container">
+                <div class="row">
+                    <div class="details">
+                        <h3>GET IN TOUCH</h3>
+                        <ul>
+                            <!--<li style="font-size: 18px">NAME : Ritendra Gour</li>-->
+                            <!--<li>-->
+                                 Number :
+                                <a href="tel:9826964395" class="change_color">9826964395</a>
+                            </li>
+                            <li>
+                                EMAIL :
+                                <a href="mailto:info@ritendra.in"
+                                    class="change_color">info@ritendra.in</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="qualificaton">
+                        <h3>QUALIFICATIONS</h3>
+                        <ul>
+                            <li>DIPLOMA : Reactjs ,PHP , WordPress</li>
+                            <li>POST GRADUATION : M.sc (cs)</li>
+                            <li>UNDER GRADUATION : B.sc (cs)</li>
+                        </ul>
+                    </div>
+                    <div class="about-us">
+                        <div class="text">
+                            <h3>ADDRESS</h3>
+                            <p>
+                                Nehru nagar, near by Atal dwar <br />
+                                Indore, Pincode : 452001(M.P.)
+                            </p>
+                            <p>
+                                Birthplace - seoni malwa<br />
+                                Dist - Narmadapuram (M.P.)
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="qualificaton">
+                        <h3>EXPLORE MENU &nbsp;&nbsp;</h3>
+                        <ul>
+                            <li>
+                                <a href="#" class="change_color" onclick="homeShow()">Home</a>
+                            </li>
+                            <li>
+                                <a href="#about" onclick="aboutShow()" class="change_color">About</a>
+                            </li>
+                            <li>
+                                <a href="#Skills" onclick="skillsShow()" class="change_color">Skills</a>
+                            </li>
+                            <li>
+                                <a href="#main-project" onclick="projectShow()" class="change_color">Project</a>
+                            </li>
+                            <li>
+                                <a href="#main-contact" onclick="contactShow()" class="change_color">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="social-icon">
+                <ul>
+                    <li>
+                        <a href="tel:9826964395" target="_blank"><i class="fa fa-phone"></i></a>
+                    </li>
+                    <li>
+                        <a href="mailto:info@ritendra.in" target="_blank"><i class="fa fa-envelope"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/ritendragour" target="_blank"><i class="fa fa-linkedin"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/ritendra.gour.77/" target="_blank"><i class="fa fa-facebook-f"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/ritendra_gour/" target="_blank"><i class="fa fa-instagram"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://mobile.twitter.com/ritendragour1" target="_blank"><i class="fa fa-twitter ures"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+    <div class="footer-main">
+        <span><i class="fa fa-copyright"></i> 2023 Powered by Ritendra Gour
+            <a href="https://in.linkedin.com/in/ritendra-gour-b33739228?trk=people_directo" target="_blank"></a>
+        </span>
+    </div>
+
+    <script src="https://www.google.com/recaptcha/api.js"></script>
+    <!-- <script>
+    function onSubmit(token) {
+        document.getElementById("contactForm").submit();
+    }
+    </script> -->
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="./main.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script>
+       
+// Show Hide function
+var home = document.getElementById('home');
+var about = document.getElementById('about');
+var skills = document.getElementById('Skills');
+var project = document.getElementById('main-project');
+var contact = document.getElementById('main-contact');
+
+function homeShow() {
+    about.style.display = 'none';
+    skills.style.display = 'none';
+    project.style.display = 'none';
+    contact.style.display = 'none';
+}
+function aboutShow() {
+    about.style.display = 'block';
+    skills.style.display = 'none';
+    project.style.display = 'none';
+    contact.style.display = 'none';
+}
+
+function skillsShow() {
+    skills.style.display = 'block';
+    about.style.display = 'none';
+    project.style.display = 'none';
+    contact.style.display = 'none';
+}
+
+function projectShow() {
+    project.style.display = 'block';
+    skills.style.display = 'none';
+    about.style.display = 'none';
+    contact.style.display = 'none';
+}
+
+function contactShow() {
+    contact.style.display = 'block';
+    skills.style.display = 'none';
+    about.style.display = 'none';
+    project.style.display = 'none';
+}
+
+// SMTP API
+let fName = document.getElementById('fName');
+let usermail = document.getElementById('cEmail');
+let cPhone = document.getElementById('cPhone');
+let cMessage = document.getElementById('cMessage');
+
+function sendEmail() {
+    Email.send({
+        Host: "smtp.mailtrap.io",
+        Username: "de3mo9@gmail.com",
+        Password: "Lxhry84x6N?U5WC",
+        To: 'de3mo9@gmail.com',
+        From: "de3mo9@gmail.com",
+        Subject: "Test email",
+        Body: 'Name - ' + fName.value + '\n' +
+            'Email - ' + usermail.value + '\n' +
+            'Phone - ' + cPhone.value + '\n' +
+            'Message - ' + cMessage.value + '\n',
+    }).then(
+        message => alert(message)
+    );
+}
+    </script>
+</body>
+
+</html>
